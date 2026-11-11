@@ -1,0 +1,142 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.navbar-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-brand-text {
+  font-size: 18px;
+  font-weight: 800;
+  color: #107c41;
+  letter-spacing: -0.3px;
+}
+
+/* LINKS */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #334155;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-link:hover {
+  background: #f1f5f9;
+  color: #107c41;
+}
+
+/* CONTACT BUTTON */
+.contact-btn {
+  background: #f8fafc;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}
+
+.contact-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* USER SECTION */
+.navbar-user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-user-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f0fdf4;
+  border: 1px solid #dcfce7;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #107c41;
+}
+
+.user-icon {
+  color: #107c41;
+}
+
+.logout-btn {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fee2e2;
+}
+
+.logout-btn:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.login-nav-btn {
+  background: #107c41;
+  color: #ffffff;
+}
+
+.login-nav-btn:hover {
+  background: #0d6334;
+  color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 10px 16px;
+  }
+
+  .navbar-logo img {
+    height: 32px;
+  }
+
+  .navbar-link {
+    font-size: 12.5px;
+    padding: 6px 10px;
+  }
+
+  .user-name-text {
+    display: none;
+  }
+}
